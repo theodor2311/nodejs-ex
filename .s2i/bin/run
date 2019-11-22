@@ -22,7 +22,8 @@ run_node() {
     exec nodemon --inspect="$DEBUG_PORT"
   else
     echo "Launching via npm..."
-    exec npm run -d $NPM_RUN
+    #exec npm run -d $NPM_RUN
+    yarn start
   fi
 } 
 
